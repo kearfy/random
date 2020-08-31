@@ -6,12 +6,12 @@ class wsmng {
 	   			bubbles: true
 	  		});
 
-	  		var textbox = document.querySelector('div._3FRCZ');
+	  		var textbox = document.querySelector('#main > footer > div._3ee1T._1LkpH.copyable-area > div._3uMse > div > div._3FRCZ.copyable-text.selectable-text');
 
 	  		textbox.textContent = msg;
 	  		textbox.dispatchEvent(event);
 
-	  		document.querySelector("button._1U1xa").click();
+	  		document.querySelector("#main > footer > div._3ee1T._1LkpH.copyable-area > div:nth-child(3) > button").click();
 		}
 
 		static start(msg, interval, amount = false) {

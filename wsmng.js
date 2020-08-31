@@ -6,12 +6,12 @@ class wsmng {
 	   			bubbles: true
 	  		});
 
-	  		var textbox = document.querySelector('div._3u328');
+	  		var textbox = document.querySelector('div._3FRCZ');
 
 	  		textbox.textContent = msg;
 	  		textbox.dispatchEvent(event);
 
-	  		document.querySelector("button._3M-N-").click();
+	  		document.querySelector("button._1U1xa").click();
 		}
 
 		static start(msg, interval, amount = false) {

@@ -14,20 +14,29 @@ class wsmng {
 	  		document.querySelector("#main > footer > div._3ee1T._1LkpH.copyable-area > div:nth-child(3) > button").click();
 		}
 
-		static start(msg, interval, amount = false) {
+		static start(msg, interval, amount = false, timeout = false) {
 			interval = (interval < 1 ? 1 : interval);
 			var counter = 0;
 			if (!amount) {
-				return setInterval(() => {
+				var bomber = setInterval(() => {
 					this.send(msg);
 				}, interval);
+				
+				if (!timeout) {
+					return bomber	
+				} else {
+					setTimeout(function() {
+						clearInterval(bomber);
+						console.log('Finished after ' + (timeout / 1000) + ' seconds');
+					}, timeout);
+				}
 			} else {
 				var bomber = setInterval(() => {
 					this.send(msg);
 					counter += 1;
 					if (counter === amount) {
 						clearInterval(bomber);
-						console.log('finished after ' + amount + ' messages');
+						console.log('Finished after ' + amount + ' messages');
 					}
 				}, interval);
 			}

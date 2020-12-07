@@ -6,12 +6,12 @@ class wsmng {
 	   			bubbles: true
 	  		});
 
-	  		var textbox = document.querySelector('#main > footer > div._3ee1T._1LkpH.copyable-area > div._3uMse > div > div._3FRCZ.copyable-text.selectable-text');
+	  		var textbox = document.querySelector("#main > footer > div._3SvgF._1mHgA.copyable-area > div.DuUXI > div > div._1awRl.copyable-text.selectable-text")
 
 	  		textbox.textContent = msg;
 	  		textbox.dispatchEvent(event);
 
-	  		document.querySelector("#main > footer > div._3ee1T._1LkpH.copyable-area > div:nth-child(3) > button").click();
+	  		document.querySelector("#main > footer > div._3SvgF._1mHgA.copyable-area > div:nth-child(3) > button").click();
 		}
 
 		static start(msg, interval, amount = false, timeout = false) {

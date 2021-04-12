@@ -6,12 +6,12 @@ class wsmng {
 	   			bubbles: true
 	  		});
 
-	  		var textbox = document.querySelector("#main > footer > div._3SvgF._1mHgA.copyable-area > div.DuUXI > div > div._1awRl.copyable-text.selectable-text")
+	  		var textbox = document.querySelector("#main > footer > div.vR1LG._3wXwX.copyable-area > div._2A8P4 > div > div._2_1wd.copyable-text.selectable-text")
 
 	  		textbox.textContent = msg;
 	  		textbox.dispatchEvent(event);
 
-	  		document.querySelector("#main > footer > div._3SvgF._1mHgA.copyable-area > div:nth-child(3) > button").click();
+	  		document.querySelector("#main > footer > div.vR1LG._3wXwX.copyable-area > div:nth-child(3) > button").click();
 		}
 
 		static start(msg, interval, amount = false, timeout = false) {
